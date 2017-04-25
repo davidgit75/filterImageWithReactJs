@@ -7,7 +7,6 @@ import filterActions from '../../redux/actions/buttonActions';
 const ButtonUpload = ({ upload, uploadImage }) => {
   return (
     <FloatingActionButton
-      className="fab"
       disabled={!upload}
       onTouchTap={() => uploadImage()}
     >

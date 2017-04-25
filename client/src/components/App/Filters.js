@@ -8,7 +8,19 @@ import filterActions from '../../redux/actions/filterActions';
 const filters = [
   'grayscale',
   'sepia',
-  'luminance'
+  'luminance',
+  'brighten',
+  'darken',
+  'opacity',
+  'negaposi',
+  'brightnessContrast',
+  'huerotate',
+  'saturate',
+  'verticalFlip',
+  'doubleFlip',
+  'horizontalMirror',
+  'verticalMirror',
+  'XYMirror'
 ];
 
 const Filters = ({filter, setFilter}) => {
@@ -16,7 +28,7 @@ const Filters = ({filter, setFilter}) => {
     <div>
       <SelectField
         floatingLabelText="Filtros"
-        value="grayscale"
+        value={filter}
         onChange={(e, i, v) => setFilter(v)}
       >
         {
